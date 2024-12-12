@@ -6,9 +6,8 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 app = Flask(__name__)
 
 # Load the saved model and vectorizer
-model = joblib.load('spam_classifier.pkl')
-vectorizer = joblib.load('tfidf_vectorizer.pkl')
- # Load the saved vectorizer
+model = joblib.load('spam_classifier_tuned.pkl')
+vectorizer = joblib.load('tfidf_vectorizer_tuned.pkl')
 
 # Define the homepage route
 @app.route('/')
@@ -25,16 +24,20 @@ def predict():
         # Transform the input text into the same vectorized form as the training data
         email_tfidf = vectorizer.transform([email_content])
         
-        # Predict whether it's spam or not using the loaded model
-        prediction = model.predict(email_tfidf)
+        # Predict probabilities for both classes (Spam, Not Spam)
+        prediction_prob = model.predict_proba(email_tfidf)[0]
         
-        # Return the result to the user
-        if prediction == 1:
+        # Get the confidence percentages for each class
+        spam_prob = round(prediction_prob[1] * 100, 2)  # Round to 2 decimal places
+        not_spam_prob = round(prediction_prob[0] * 100, 2)  # Round to 2 decimal places
+        
+        # Predict the final label
+        if prediction_prob[1] > prediction_prob[0]:
             result = "Spam"
         else:
             result = "Not Spam"
         
-        return render_template('index.html', prediction_result=result)
+        return render_template('index.html', prediction_result=result, spam_prob=spam_prob, not_spam_prob=not_spam_prob)
 
 if __name__ == '__main__':
     app.run(debug=True)

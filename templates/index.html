@@ -13,7 +13,9 @@
     </form>
 
     {% if prediction_result %}
-    <h2>Result: {{ prediction_result }}</h2>
+        <h2>Result: {{ prediction_result }}</h2>
+        <p>Spam Probability: {{ spam_prob }}%</p>
+        <p>Not Spam Probability: {{ not_spam_prob }}%</p>
     {% endif %}
 </body>
 </html>

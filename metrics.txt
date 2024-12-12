@@ -1,0 +1,16 @@
+Dataset loaded successfully.
+Columns in the dataset: Index(['subject', 'label'], dtype='object')
+Accuracy: 98.41%
+Classification Report:
+               precision    recall  f1-score   support
+
+           0       1.00      0.97      0.98     21420
+           1       0.97      1.00      0.99     24308
+
+    accuracy                           0.98     45728
+   macro avg       0.99      0.98      0.98     45728
+weighted avg       0.98      0.98      0.98     45728
+
+Confusion Matrix:
+ [[20699   721]
+ [    6 24302]]
