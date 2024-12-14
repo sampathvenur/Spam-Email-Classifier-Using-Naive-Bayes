@@ -1,6 +1,6 @@
 Dataset loaded successfully.
 Columns in the dataset: Index(['subject', 'label'], dtype='object')
-Accuracy: 98.41%
+Accuracy: 89.44%
 Classification Report:
                precision    recall  f1-score   support
 
