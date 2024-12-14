@@ -25,7 +25,7 @@ The backend of the project is built using **Flask**, a lightweight Python web fr
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/yourusername/spam-email-classifier.git
+git clone https://github.com/yourusername/Spam-Email-Classifier-Using-Naive-Bayes.git
 cd spam-email-classifier
 ```
 
@@ -98,14 +98,6 @@ The application will start on `http://127.0.0.1:5000/`. You can open this URL in
 2. **Click Submit**: After typing the subject, click the "Check" button to submit the form.
 3. **View Prediction**: The application will show whether the email is **spam** or **not spam** based on the subject.
 
-Example:
-
-- Email Subject: "Hello Sir, Congrats on Winning the Lottery"
-  - Prediction: **Spam**
-  
-- Email Subject: "Important Information Regarding Your Account"
-  - Prediction: **Not Spam**
-
 ## Project Structure
 
 Here’s the structure of the project:
@@ -118,9 +110,6 @@ spam-email-classifier/
 ├── spam_classifier.pkl       # Trained model
 ├── templates/
 │   └── index.html            # HTML file for the web interface
-└── static/
-    ├── css/
-    │   └── style.css         # Stylesheet for the frontend
 ```
 
 - `app.py`: This file contains the Flask web application, which serves the web interface and handles requests for predictions.
@@ -128,7 +117,6 @@ spam-email-classifier/
 - `spam.csv`: A CSV file containing labeled email subjects. You can replace it with your own dataset.
 - `spam_classifier.pkl`: The trained machine learning model, which is used in `app.py` for predictions.
 - `templates/index.html`: HTML page for the user interface.
-- `static/css/style.css`: CSS file for styling the page.
 
 ## How It Works
 
@@ -154,7 +142,7 @@ Feel free to contribute to this project. You can:
 - **Naive Bayes** algorithm and **TF-IDF** vectorization for spam detection.
 - **Flask** for the web application framework.
 - **Scikit-learn**, **pandas**, and **joblib** for machine learning and model serialization.
-- Dataset source: [SpamAssassin Public Corpus](https://spamassassin.apache.org/).
+- Dataset source: kaggle.
 
 ---
 For any issues, please feel free to raise them in the Issues section of the repository.
