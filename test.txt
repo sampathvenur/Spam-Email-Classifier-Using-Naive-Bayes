@@ -1,3 +1,47 @@
-Spam: "Exclusive Deal Just For You: Get 80% Off on Luxury Watches, Limited Stock Available - Act Fast and Save Big!"
+ham
 
-Not Spam: "Team Update: New Guidelines for Next Month's Marketing Campaign - Review the Attached Document for Important Information."
+1) 
+
+Subject: Your Monthly Tech Innovations Digest
+
+Dear Valued Subscriber,
+
+In this month's edition of Tech Innovations:
+- Top 5 AI Breakthroughs of 2024
+- Sustainable Tech Developments
+- Interview with Leading Robotics Engineer
+
+Curated content to keep you informed about the latest technological advancements.
+
+Unsubscribe | Update Preferences
+
+2)
+
+MEETING TOMORROW AT 3 PM,
+
+
+spam
+
+1)
+
+Congratulations! You've won a $1,000,000 prize! Click here to claim now.
+
+2) 
+
+Make money fast from home! Just sign up here!
+
+3)
+
+Subject: CONGRATULATIONS! YOU'VE WON $5,000,000!!!
+
+Dear Lucky Winner,
+
+You have been selected as the GRAND PRIZE WINNER of our international lottery! To claim your $5,000,000 prize, please immediately:
+- Send $500 processing fee
+- Provide your full bank account details
+- Confirm your social security number
+
+Urgent action required! Reply now to claim your prize!
+
+Sincerely,
+Global Lottery Commission
